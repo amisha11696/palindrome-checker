@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body{
+    background-color: pink;
+    
+}
+.container{
+   width: 80%; 
+   max-width: 30.5em;
+   background-color:white;
+   padding: 2em 3em;
+   border-radius: 3%;
+   box-shadow: 0.2px 3.5em rgb(255, 255, 255);
+   position: absolute;
+   transform: translate(-50% -50%);
+   left: 30%;
+   top: 30%;
+}
+.App-title{
+    color: rgb(5, 0, 9);
+    font-size: 1.6em;
+}
+.input-wrapper{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 0.5em;
+    margin: 1em 0 2em 0;
+    border: 2px solid rgba(245, 245, 245, 0.863);
+    padding: 1em 0;
+    font-weight: 400;
+    font-size: 1em;
+}
+input:focus{
+    border-bottom: 2px solid rgb(227, 60, 60);
+}
+button{
+   font-size: 1em; 
+   padding: 1em, 0.5em;
+   background-color: rgb(188, 181, 187);
+   border: none;
+   color: black;
+   border-radius: 0.1em;
+   cursor: pointer;
+}
+p{
+    text-align: center;
+    color: rgb(250, 235, 215);
+    font-weight: 400;
+    padding: 1em 0;
+    border-radius: 0.5em;
+    transition: 0.5s;
+
+}
+p span {
+    font-weight: 400;
+    font-style: italic;
+}
+.success{
+    background-color: rgb(8, 103, 101);
+    animation: pop 0.5s;
+}
+
+.error{
+    background-color: rgb(195, 111, 9);
+    animation: pop 0.4s;
+}
+@keyframes pop{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
